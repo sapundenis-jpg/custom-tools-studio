@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#F4F0E7">
+  <title>Айдентика — Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="network"></canvas>
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"><span></span></span>
+      <span>studio</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="">Главная</a>
+<a href="approach.html" class="">Как работаем</a>
+<a href="projects.html" class="">Проекты</a>
+<a href="identity.html" class="active">Айдентика</a>
+<a href="contacts.html" class="">Контакты</a>
+    </nav>
+
+    <button class="menu" id="menu" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">визуальная система</div>
+      <h1>Айдентика</h1>
+      <p>
+        Визуальный язык строится вокруг темы связей, систем и объединения отдельных элементов в один процесс.
+      </p>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container identity-grid">
+
+      <article class="identity-card reveal">
+        <h2>Цвет</h2>
+        <p>Светлая база остаётся основной. Тёплый жёлтый работает как главный акцент, а приглушённый синий уравновешивает его.</p>
+        <div class="swatches">
+          <div class="swatch sy">охра<br>#D4A72C</div>
+          <div class="swatch sb">синий<br>#647DAF</div>
+          <div class="swatch sc">светлая база<br>#F4F0E7</div>
+          <div class="swatch sr">дополнительный<br>#C77A5F</div>
+        </div>
+      </article>
+
+      <article class="identity-card reveal">
+        <h2>Графика</h2>
+        <p>Связующие линии, точки и схемы показывают соединение нескольких частей системы в одну рабочую логику.</p>
+        <div class="identity-demo">
+          <svg viewBox="0 0 600 300">
+            <path d="M70 70 C160 25 180 160 290 125 S430 30 535 80" fill="none" stroke="#647DAF" stroke-width="2" opacity=".55"/>
+            <path d="M65 235 C170 185 205 270 310 210 S430 165 540 230" fill="none" stroke="#D4A72C" stroke-width="2" opacity=".65"/>
+            <circle cx="70" cy="70" r="13" fill="#D4A72C"/>
+            <circle cx="290" cy="125" r="16" fill="#647DAF"/>
+            <circle cx="535" cy="80" r="11" fill="#D4A72C"/>
+            <circle cx="65" cy="235" r="10" fill="#647DAF"/>
+            <circle cx="310" cy="210" r="15" fill="#D4A72C"/>
+            <circle cx="540" cy="230" r="12" fill="#647DAF"/>
+          </svg>
+        </div>
+      </article>
+
+      <article class="identity-card reveal">
+        <h2>Композиция</h2>
+        <p>Крупные смысловые блоки, свободное пространство и понятная иерархия текста. Декоративная графика не должна мешать чтению.</p>
+        <p>Связи и узлы используются как функциональный мотив, а не как фон ради фона.</p>
+      </article>
+
+      <article class="identity-card reveal">
+        <h2>Характер</h2>
+        <p>Технический, но не холодный. Системный, но не корпоративный. Живой, но не декоративный.</p>
+        <p>Ручные элементы можно добавлять локально: стрелки, пометки, подчёркивания и небольшие схемы.</p>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>Студия кастомных цифровых инструментов</span>
+    <span data-year></span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body></html>

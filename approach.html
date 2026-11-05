@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#F4F0E7">
+  <title>Как работаем — Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="network"></canvas>
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"><span></span></span>
+      <span>studio</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="">Главная</a>
+<a href="approach.html" class="active">Как работаем</a>
+<a href="projects.html" class="">Проекты</a>
+<a href="identity.html" class="">Айдентика</a>
+<a href="contacts.html" class="">Контакты</a>
+    </nav>
+
+    <button class="menu" id="menu" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">подход</div>
+      <h1>Как мы работаем</h1>
+      <p>
+        Наша задача — не заставить команду подстроиться под очередную программу, а собрать решение вокруг её реального рабочего процесса.
+      </p>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <div class="comparison reveal">
+
+        <article class="compare">
+          <h3>Готовое решение</h3>
+          <div class="points">
+            <div class="point"><span>1</span><div>Сначала выбирается программа, затем команда перестраивает работу под её логику.</div></div>
+            <div class="point"><span>2</span><div>Часть функций оказывается лишней, а нужных сценариев может не быть.</div></div>
+            <div class="point"><span>3</span><div>Данные остаются разбросаны между CRM, таблицами, чатами и другими сервисами.</div></div>
+          </div>
+
+          <div class="compare-diagram">
+            <div class="chain">
+              <span class="box">CRM</span><span class="arrow">→</span>
+              <span class="box">таблица</span><span class="arrow">→</span>
+              <span class="box">чат</span><span class="arrow">→</span>
+              <span class="box">сервис</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="compare custom">
+          <h3>Наш подход</h3>
+          <div class="points">
+            <div class="point"><span>1</span><div>Сначала разбирается реальный процесс команды.</div></div>
+            <div class="point"><span>2</span><div>После этого проектируется инструмент под конкретные роли и действия.</div></div>
+            <div class="point"><span>3</span><div>Нужные сервисы связываются внутри одной понятной системы.</div></div>
+          </div>
+
+          <div class="compare-diagram">
+            <div class="hub">
+              <svg>
+                <line x1="16%" y1="18%" x2="50%" y2="50%"/>
+                <line x1="84%" y1="18%" x2="50%" y2="50%"/>
+                <line x1="16%" y1="82%" x2="50%" y2="50%"/>
+                <line x1="84%" y1="82%" x2="50%" y2="50%"/>
+              </svg>
+              <div class="hub-center">единый<br>интерфейс</div>
+              <div class="hub-item i1">CRM</div>
+              <div class="hub-item i2">AI</div>
+              <div class="hub-item i3">Telegram</div>
+              <div class="hub-item i4">данные</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">этапы</div>
+      <h2>Работа строится <span class="accent">по понятной последовательности.</span></h2>
+
+      <div class="steps">
+        <div class="step reveal"><div class="step__num">01 / запрос</div><div><h3>Формулируем проблему</h3><p>Команда описывает процесс, который занимает много времени, неудобно устроен или состоит из слишком большого количества ручных действий.</p></div></div>
+        <div class="step reveal"><div class="step__num">02 / разбор</div><div><h3>Изучаем работу команды</h3><p>Фиксируем роли, действия, сервисы, ручные операции и места, в которых процесс начинает тормозить.</p></div></div>
+        <div class="step reveal"><div class="step__num">03 / проектирование</div><div><h3>Определяем формат решения</h3><p>Решаем, нужен ли отдельный интерфейс, дашборд, бот, интеграция или комбинация нескольких инструментов.</p></div></div>
+        <div class="step reveal"><div class="step__num">04 / прототип</div><div><h3>Собираем логику</h3><p>Проектируем экраны, пользовательские сценарии и последовательность действий внутри будущей системы.</p></div></div>
+        <div class="step reveal"><div class="step__num">05 / сборка</div><div><h3>Реализуем систему</h3><p>Подключаем код, API, базы данных, AI, no-code инструменты и существующие сервисы.</p></div></div>
+        <div class="step reveal"><div class="step__num">06 / внедрение</div><div><h3>Проверяем на реальной работе</h3><p>Решение тестируется командой, после чего интерфейс и логика корректируются под фактическое использование.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">техническая основа</div>
+      <h2>Несколько инструментов могут работать <span class="accent">как одна система.</span></h2>
+
+      <div class="tech-grid">
+        <div class="orbit reveal">
+          <div class="ring r1"></div><div class="ring r2"></div>
+          <div class="orbit-center">рабочий<br>интерфейс</div>
+          <span class="orbit-item o1">API</span>
+          <span class="orbit-item o2">AI / LLM</span>
+          <span class="orbit-item o3">CRM</span>
+          <span class="orbit-item o4">Telegram</span>
+          <span class="orbit-item o5">базы данных</span>
+          <span class="orbit-item o6">таблицы</span>
+        </div>
+
+        <div class="grid-2" style="margin-top:0">
+          <article class="card reveal"><h3>Код и интерфейсы</h3><p>Собственные веб-интерфейсы, внутренние панели и кастомная логика.</p></article>
+          <article class="card reveal"><h3>API и сервисы</h3><p>Существующие продукты можно встроить в общую систему вместо разработки всего с нуля.</p></article>
+          <article class="card reveal"><h3>AI и LLM</h3><p>Используются там, где реально сокращают ручную работу или добавляют нужный сценарий.</p></article>
+          <article class="card reveal"><h3>No-code / low-code</h3><p>Подходят для быстрых прототипов, связок и локальных автоматизаций.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>Студия кастомных цифровых инструментов</span>
+    <span data-year></span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body></html>

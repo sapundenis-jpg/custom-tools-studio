@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#F4F0E7">
+  <title>Студия кастомных цифровых инструментов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="network"></canvas>
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"><span></span></span>
+      <span>studio</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="active">Главная</a>
+<a href="approach.html" class="">Как работаем</a>
+<a href="projects.html" class="">Проекты</a>
+<a href="identity.html" class="">Айдентика</a>
+<a href="contacts.html" class="">Контакты</a>
+    </nav>
+
+    <button class="menu" id="menu" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <div class="eyebrow">кастомные цифровые инструменты</div>
+        <h1>
+          <span>Инструмент</span>
+          <span>под процесс,</span>
+          <span class="accent">а не наоборот.</span>
+        </h1>
+
+        <p class="hero__text">
+          Разрабатываем интерфейсы, внутренние сервисы и связки под конкретную рабочую логику команды.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn primary" href="approach.html">Как мы работаем →</a>
+          <a class="btn ghost" href="projects.html">Наши проекты</a>
+        </div>
+
+        <div class="hero__tags">
+          <span class="tag">интерфейсы</span>
+          <span class="tag">AI-связки</span>
+          <span class="tag">автоматизация</span>
+          <span class="tag">интеграции</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card__label">пример связки</div>
+
+        <svg class="map" viewBox="0 0 520 420" aria-hidden="true">
+          <path d="M70 85 C170 30 205 190 290 140 S390 85 455 115" />
+          <path class="yellow" d="M85 315 C165 265 215 350 290 280 S400 250 455 315" />
+          <path d="M70 85 C100 210 160 250 290 280" />
+          <path class="yellow" d="M455 115 C410 170 390 240 455 315" />
+
+          <g class="node"><circle cx="70" cy="85" r="18" fill="#647DAF"/><text x="37" y="54">форма</text></g>
+          <g class="node"><circle cx="290" cy="140" r="24" fill="#D4A72C"/><text x="275" y="102">AI</text></g>
+          <g class="node"><circle cx="455" cy="115" r="16" fill="#647DAF"/><text x="430" y="83">CRM</text></g>
+          <g class="node"><circle cx="85" cy="315" r="15" fill="#D4A72C"/><text x="45" y="350">Telegram</text></g>
+          <g class="node">
+            <rect x="245" y="245" rx="18" ry="18" width="110" height="72" fill="#FBF8F1" stroke="#2E2A25" stroke-opacity=".16"/>
+            <text x="268" y="278">единый</text><text x="260" y="295">интерфейс</text>
+          </g>
+          <g class="node"><circle cx="455" cy="315" r="19" fill="#647DAF"/><text x="417" y="353">аналитика</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <div class="reveal">
+        <div class="eyebrow">что за проект</div>
+        <h2>
+          Сначала разбираем реальный процесс команды.
+          <span class="accent">Потом собираем под него инструмент.</span>
+        </h2>
+        <p class="lead">
+          Это может быть интерфейс, внутренний дашборд, AI-связка, бот, WebApp или интеграция уже используемых сервисов.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <div class="grid-3">
+        <a href="approach.html" class="card link-card reveal">
+          <div class="small">01 / подход</div>
+          <span class="dot"></span>
+          <h3>Как мы работаем</h3>
+          <p>Разница между готовым продуктом и кастомным решением, этапы и техническая логика.</p>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a href="projects.html" class="card link-card reveal">
+          <div class="small">02 / кейсы</div>
+          <span class="dot"></span>
+          <h3>Наши проекты</h3>
+          <p>Отдельный раздел под реализуемые решения и будущие кейсы.</p>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a href="identity.html" class="card link-card reveal">
+          <div class="small">03 / визуальная система</div>
+          <span class="dot"></span>
+          <h3>Айдентика</h3>
+          <p>Цвет, графический принцип, сетка и общий характер визуального языка.</p>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta__copy">
+          <div class="eyebrow">начать проект</div>
+          <h2>Есть процесс, который работает неудобно?</h2>
+          <p>Опишите его в нескольких предложениях. Этого достаточно, чтобы начать разбор.</p>
+        </div>
+
+        <form class="form demo-form">
+          <input class="field" placeholder="Имя" required>
+          <input class="field" placeholder="Telegram / email" required>
+          <textarea class="field" placeholder="Что сейчас работает неудобно?" required></textarea>
+          <button class="btn primary" type="submit">Отправить</button>
+          <div class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>Студия кастомных цифровых инструментов</span>
+    <span data-year></span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body></html>
