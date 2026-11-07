@@ -38,6 +38,33 @@ document.querySelectorAll(".reveal").forEach(el=>revealObserver.observe(el));
 const SUPABASE_URL = "https://bpdqosfgxqawbzljafgb.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_FQaK_TPRAjA1NMcVG9zqzw_VFvqaRXk";
 
+const SITE_RESOURCES = {
+  telegram:  { label: "", url: "" },
+  instagram: { label: "", url: "" },
+  behance:   { label: "", url: "" },
+  email:     { label: "", url: "" }
+};
+
+document.querySelectorAll("[data-resource]").forEach(link => {
+  const key = link.dataset.resource;
+  const resource = SITE_RESOURCES[key];
+  const value = link.querySelector(".resource-value");
+
+  if (!resource?.url) {
+    link.classList.add("is-empty");
+    link.removeAttribute("href");
+    if (value) value.textContent = "Скоро";
+    return;
+  }
+
+  link.href = resource.url;
+  if (/^https?:/i.test(resource.url)) {
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+  }
+  if (value) value.textContent = resource.label || resource.url;
+});
+
 async function supabaseRequest(path, options = {}) {
   const headers = {
     apikey: SUPABASE_PUBLISHABLE_KEY,
@@ -93,7 +120,7 @@ document.querySelectorAll("form.demo-form").forEach(form=>{
       });
 
       form.reset();
-      status.textContent = "Готово. Заявка сохранена.";
+      status.textContent = "Готово. Заявка отправлена.";
     } catch (error) {
       console.error(error);
       status.textContent = "Не получилось отправить заявку. Попробуй ещё раз.";
