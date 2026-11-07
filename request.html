@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#F4F0E7">
+  <title>Отправить заявку — Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="network"></canvas>
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"><span></span></span>
+      <span>studio</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="">Главная</a>
+      <a href="approach.html" class="">Как работаем</a>
+      <a href="projects.html" class="">Проекты</a>
+      <a href="identity.html" class="">Айдентика</a>
+      <a href="contacts.html" class="">Наши ресурсы</a>
+      <a href="request.html" class="active nav-cta">Отправить заявку</a>
+    </nav>
+
+    <button class="menu" id="menu" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">заявка</div>
+      <h1>Расскажите, что нужно упростить</h1>
+      <p>Имя, удобный контакт и несколько предложений о задаче — этого достаточно.</p>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <div class="cta request-cta">
+        <div class="cta__copy">
+          <div class="eyebrow">начать разговор</div>
+          <h2>Не нужен готовый бриф.</h2>
+          <p>Опишите, что сейчас работает неудобно, занимает слишком много времени или требует лишних ручных действий.</p>
+        </div>
+
+        <form class="form demo-form">
+          <input class="field" name="name" placeholder="Имя" required>
+          <input class="field" name="contact" placeholder="Telegram / email / Instagram" required>
+          <textarea class="field" name="message" placeholder="Что хочется упростить или собрать?" required></textarea>
+          <button class="btn primary" type="submit">Отправить заявку</button>
+          <div class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>Студия кастомных цифровых инструментов</span>
+    <span data-year></span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body></html>
