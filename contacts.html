@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#F4F0E7">
-  <title>Контакты — Studio</title>
+  <title>Наши ресурсы — Studio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,10 +19,11 @@
 
     <nav class="nav" id="nav">
       <a href="index.html" class="">Главная</a>
-<a href="approach.html" class="">Как работаем</a>
-<a href="projects.html" class="">Проекты</a>
-<a href="identity.html" class="">Айдентика</a>
-<a href="contacts.html" class="active">Контакты</a>
+      <a href="approach.html" class="">Как работаем</a>
+      <a href="projects.html" class="">Проекты</a>
+      <a href="identity.html" class="">Айдентика</a>
+      <a href="contacts.html" class="active">Наши ресурсы</a>
+      <a href="request.html" class="nav-cta">Отправить заявку</a>
     </nav>
 
     <button class="menu" id="menu" aria-label="Меню">
@@ -32,42 +33,47 @@
 </header>
 
 <main class="page">
-
   <section class="page-hero">
     <div class="container">
       <div class="eyebrow">связь</div>
-      <h1>Контакты</h1>
-      <p>Можно прийти уже с готовой идеей или просто описать процесс, который хочется сделать удобнее.</p>
+      <h1>Наши ресурсы</h1>
+      <p>Наши площадки, работы и прямые контакты.</p>
     </div>
   </section>
 
   <section class="section tight">
     <div class="container">
-      <div class="cta">
+      <div class="resource-grid">
+        <a class="resource-card reveal" data-resource="telegram" href="#">
+          <div class="small">01 / канал</div>
+          <h2>Telegram</h2>
+          <p>Новости, процессы и рабочие заметки.</p>
+          <span class="resource-value">Скоро</span>
+        </a>
 
-        <div class="cta__copy">
-          <h2>Обсудить проект</h2>
-          <p>Контакты пока стоят как заглушки — их легко заменить на реальные.</p>
+        <a class="resource-card reveal" data-resource="instagram" href="#">
+          <div class="small">02 / визуальное</div>
+          <h2>Instagram</h2>
+          <p>Визуальные материалы и короткие обновления.</p>
+          <span class="resource-value">Скоро</span>
+        </a>
 
-          <div class="contact-links">
-            <a class="contact-link" href="#"><strong>Telegram</strong><span>@yourname</span></a>
-            <a class="contact-link" href="mailto:hello@example.com"><strong>Email</strong><span>hello@example.com</span></a>
-            <a class="contact-link" href="#"><strong>Instagram</strong><span>@studio</span></a>
-          </div>
-        </div>
+        <a class="resource-card reveal" data-resource="behance" href="#">
+          <div class="small">03 / работы</div>
+          <h2>Behance</h2>
+          <p>Проекты и оформленные кейсы.</p>
+          <span class="resource-value">Скоро</span>
+        </a>
 
-        <form class="form demo-form">
-          <input class="field" placeholder="Имя" required>
-          <input class="field" placeholder="Telegram / email" required>
-          <textarea class="field" placeholder="Опишите задачу" required></textarea>
-          <button class="btn primary" type="submit">Отправить</button>
-          <div class="form-status"></div>
-        </form>
-
+        <a class="resource-card reveal" data-resource="email" href="#">
+          <div class="small">04 / напрямую</div>
+          <h2>Email</h2>
+          <p>Для писем, предложений и прямой связи.</p>
+          <span class="resource-value">Скоро</span>
+        </a>
       </div>
     </div>
   </section>
-
 </main>
 
 <footer class="footer">
